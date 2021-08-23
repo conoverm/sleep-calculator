@@ -1,0 +1,11 @@
+button {
+    border-radius: 8px 8px;
+    height: 2rem;
+    width: auto;
+    color: black;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    color: #ccc;
+}

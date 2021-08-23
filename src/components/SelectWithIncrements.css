@@ -1,0 +1,19 @@
+label {
+    display: block;
+}
+
+select {
+    height: 1.75rem;
+}
+
+option {
+    font-size: 1rem;
+}
+
+.SelectWithIncrement {
+    margin-right: 2rem;
+}
+
+.SelectWithIncrement:last-child {
+    margin-right: 0;
+}

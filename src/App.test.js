@@ -1,8 +1,13 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+it('renders required elements', () => {
+  render( <App /> );
+  const inBed = screen.getByText(/Duration in Bed/i);
+  const asleep = screen.getByText(/Duration Asleep/i);
+  const button = screen.getByText('Calculate')
+
+  expect(inBed).toBeInTheDocument();
+  expect(asleep).toBeInTheDocument();
+  expect(button).toBeInTheDocument();
 });
